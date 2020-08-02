@@ -1,6 +1,6 @@
 <h1>Task:</h1>
-Create a simple calculator that given a string of operators (), +, -, *, / and numbers separated by spaces returns the value of that expression
-
+Create a simple calculator that given a string of operators (), +, -, *, / and numbers separated by spaces returns the value of that expression.
+You can not use eval, exec, kata goal that you would write a valid calculator yourself.
 <h2>Example:</h2>
 
 `Calculator().evaluate("2 / 2 + 3 * 4 - 6") # => 7`
