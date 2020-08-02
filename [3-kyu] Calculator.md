@@ -11,14 +11,14 @@ Remember about the order of operations! Multiplications and divisions have a hig
 <h2>Tests:</h2>
 
 ```
-"2 + 3" == 5
-"2 + 3" == 5
-"2 - 3 - 4" == -5
-"10 * 5 / 2" == 25
-"2 / 2 + 3 * 4 - 6" == 7
-"2 + 3 * 4 / 3 - 6 / 3 * 3 + 8" == 8
-"1.1 + 2.2 + 3.3" == 6.6
-"1.1 * 2.2 * 3.3" == 7.986
+Calculator().evaluate("2 + 3") => 5
+Calculator().evaluate("2 + 3)" >= 5
+Calculator().evaluate("2 - 3 - 4") => -5
+Calculator().evaluate("10 * 5 / 2") => 25
+Calculator().evaluate("2 / 2 + 3 * 4 - 6") => 7
+Calculator().evaluate("2 + 3 * 4 / 3 - 6 / 3 * 3 + 8") => 8
+Calculator().evaluate("1.1 + 2.2 + 3.3") => 6.6
+Calculator().evaluate("1.1 * 2.2 * 3.3") => 7.986
 ```
 
 <hr>
