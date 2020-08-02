@@ -28,10 +28,14 @@ Remember about the order of operations! Multiplications and divisions have a hig
 ```
 class Calculator(object):
   def evaluate(self, string):
+  
+    # Deleting all spaces(compressing).
     s = ''.join(string.split())
-
+    
+    # Creating a list generator, where we put spaces between operators, and translate all numbers to float.
     result = [float(operation) if operation not in '/*-+' else operation for operation in s.replace('+', ' + ').replace('-', ' - ').replace('*', ' * ').replace('/', ' / ').split()]
-
+    
+    # If the operator (+ -*/) occurs, then we add the result of the fulfilled operator functions to the array.
     for c in '/*-+':
         array = []
         for decide in result:
@@ -41,6 +45,7 @@ class Calculator(object):
             array.append(decide)
                 
         result = array
-
+        
+    # Returning the result without the last element.
     return result.pop()
 ```
