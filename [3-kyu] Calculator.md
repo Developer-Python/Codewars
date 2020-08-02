@@ -24,7 +24,7 @@ Remember about the order of operations! Multiplications and divisions have a hig
 <hr>
 
 <h2>My Solution</h2>
-
+    
 ```
 class Calculator(object):
   def evaluate(self, string):
@@ -49,3 +49,4 @@ class Calculator(object):
     # Returning the result without the last element.
     return result.pop()
 ```
+<h6><span>Author:</span> Orlov Evgenu.</h6>
