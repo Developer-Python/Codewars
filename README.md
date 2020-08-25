@@ -1,2 +1,5 @@
-In this repository, I will show you the tasks and personally my solution to them, I believe that such tasks could be in real project, or at least what part of these tasks.
+<h3>[Russian]</h3>
+<h6>В этом репозитории, собранный задачи и лично мое решение к ним.</h6>
+<h3>[English]</h3>
+<h6> In this repository, the tasks and personally my solution to them</h6>
 
