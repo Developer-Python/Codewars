@@ -1,14 +1,14 @@
-<h1>Task:</h1>
-Create a simple calculator that given a string of operators (), +, -, *, / and numbers separated by spaces returns the value of that expression.
-You can not use eval, exec, kata goal that you would write a valid calculator yourself.
-<h2>Example:</h2>
+<h1>Задание:</h1>
+Создайте простой калькулятор, который задал строку операторов (), +, -, *, / а числа, разделенные пробелами, возвращают значение этого выражения.
+Вы не можете использовать eval, exec, kata goal, чтобы вы сами написали действительный калькулятор.
+<h2>Пример:</h2>
 
 `Calculator().evaluate("2 / 2 + 3 * 4 - 6") # => 7`
-Remember about the order of operations! Multiplications and divisions have a higher priority and should be performed left-to-right. Additions and subtractions have a lower priority and should also be performed left-to-right.
+Помните о порядке действий! Умножение и деление имеют более высокий приоритет и должны выполняться слева направо. Сложение и вычитание имеют более низкий приоритет и также должны выполняться слева направо.
 
 <hr>
 
-<h2>Tests:</h2>
+<h2>Тесты:</h2>
 
 ```
 Calculator().evaluate("2 + 3") => 5
@@ -23,19 +23,19 @@ Calculator().evaluate("1.1 * 2.2 * 3.3") => 7.986
 
 <hr>
 
-<h2>My Solution</h2>
+<h2>Моё решение</h2>
     
 ```
 class Calculator(object):
   def evaluate(self, string):
   
-    # Deleting all spaces(compressing).
+    # Удаление всех пробелов(сжатие).
     s = ''.join(string.split())
     
-    # Creating a list generator, where we put spaces between operators, and translate all numbers to float.
+    # Создание генератора списков, где мы ставим пробелы между операторами и переводим все числа в float.
     result = [float(operation) if operation not in '/*-+' else operation for operation in s.replace('+', ' + ').replace('-', ' - ').replace('*', ' * ').replace('/', ' / ').split()]
     
-    # If the operator (+ -*/) occurs, then we add the result of the fulfilled operator functions to the array.
+    # Если встречается оператор ( + - * / ), то мы добавляем в массив результат выполненных операторных функций.
     for c in '/*-+':
         array = []
         for decide in result:
@@ -46,7 +46,7 @@ class Calculator(object):
                 
         result = array
         
-    # Returning the result without the last element.
+    # Возврат результата без последнего элемента.
     return result.pop()
 ```
-<h6><span>Author:</span> Orlov Evgenu.</h6>
+<h6><span>Автор:</span> Орлов Евгений.</h6>
