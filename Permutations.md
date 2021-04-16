@@ -14,17 +14,24 @@ permutations('aabb'); # ['aabb', 'abab', 'abba', 'baab', 'baba', 'bbaa']
 <h2>Моё решение:</h2>
 
 ```
+# Инструменты для итераций
 import itertools
+
 
 def permutations(string):
     array = []
-
+    
+    # Добовляем в инструмент "строку" и "длинну этой строки"
     permutations = list( itertools.permutations(string, r=len(string)))
+    
+    # Превращаем всё в список
     list_permutations = list(map(list, permutations))
-
+    
+    # Конвертируем в строку и добовляем в массив
     for i in list_permutations:
         array.append(''.join(i))
-
+        
+    # Конвертируем в список уже без повторения
     return list(set(array))
 ```
 
