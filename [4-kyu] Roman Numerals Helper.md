@@ -4,6 +4,7 @@
 Современные римские цифры пишутся путем выражения каждой цифры отдельно, начиная с самой левой цифры и пропуская любую цифру со значением нуля. В римских цифрах 1990 отображается: `1000=M`, `900=CM`, `90=XC`; в результате `MCMXC`. 2008 записывается как `2000=MM`, `8=VIII`; или `MMVIII`. `1666` использует каждый римский символ в порядке убывания: `MDCLXVI`.
 
 <h2>Примеры:<h2>
+	
 ```
 RomanNumerals.to_roman(1000) # should return 'M'
 RomanNumerals.from_roman('M') # should return 1000
@@ -11,6 +12,7 @@ RomanNumerals.from_roman('M') # should return 1000
 
 <h2>Моё решение:<h2>
 
+```
 class RomanNumerals():
 
     # Разделение входного числа по римской системе
@@ -45,3 +47,4 @@ class RomanNumerals():
                 index += len(numeral)
 
         return result
+```
