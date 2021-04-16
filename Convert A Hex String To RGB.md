@@ -14,6 +14,7 @@
 ```
 
 <h2>Моё решение:</h2>
+
 ```
 def hex_string_to_RGB(HEX):
     rgb = HEX.replace('#', '0x') * 1
