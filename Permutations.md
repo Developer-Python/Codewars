@@ -21,7 +21,7 @@ import itertools
 def permutations(string):
     array = []
     
-    # Добавляем в инструмент "строку" и "длинну этой строки"
+    # Добавляем в метод(перметации) "строку" и "длинну этой строки"
     permutations = list( itertools.permutations(string, r=len(string)))
     
     # Превращаем всё в список
