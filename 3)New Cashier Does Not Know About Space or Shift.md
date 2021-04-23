@@ -45,9 +45,8 @@ get_order("pizzachickenfriesburgercokemilkshakefriessandwich")
 
 ```
 def get_order(order):
-    # Так-как, мы знаем, что элементы статичны, тогда можно просто переписать в нижнем регистре -
-    # - в иним случае, я бы циклом прошёлся по каждому элементу с методом .lower()
-    
+
+    # Так-как, мы знаем, что элементы статичны, тогда можно просто переписать в нижнем регистре
     menu_lower = ['burger','fries','chicken','pizza','sandwich','onionrings','milkshake','coke']
     
     new_order = []
