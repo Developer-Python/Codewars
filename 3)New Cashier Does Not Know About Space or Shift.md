@@ -47,24 +47,34 @@ get_order("pizzachickenfriesburgercokemilkshakefriessandwich")
 def get_order(order):
     # Так-как, мы знаем, что элементы статичны, тогда можно просто переписать в нижнем регистре -
     # - в иним случае, я бы циклом прошёлся по каждому элементу с методом .lower()
+    
     menu_lower = ['burger','fries','chicken','pizza','sandwich','onionrings','milkshake','coke']
+    
     new_order = []
+    
     # Обходим каждый элемент(слово)
     for i in menu_lower:
+    
         # Считаем кол-во вхождений
         count_word = order.count(i)
+        
         # Дублируем строку столько раз сколько она повторяется
         i = i * count_word
+        
         # Вырезаем первые 3 буквы дублированного слова
         start_word = i[0:3]
+        
         # Заменяем 3 буквы, на точно такой же только с пробелом(слева)
         i = i.replace(start_word, ' '+start_word.capitalize())
+        
         # Удаляем лишний пробел(слева)
         i = i.lstrip()
+        
         new_order.append(i)
 
     # Соединяем список, и фильтруем от мусора(пустых значений)
     result = ' '.join(list(filter(None, new_order)))
+    
     return result
 ```
 <h6><span>Автор:</span> Орлов Евгений.</h6>
